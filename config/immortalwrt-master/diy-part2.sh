@@ -43,6 +43,12 @@ git clone https://github.com/sbwml/v2ray-geodata package/v2ray-geodata
 make menuconfig # choose LUCI -> Applications -> luci-app-mosdns
 make package/mosdns/luci-app-mosdns/compile V=s
 
+#Add luci-theme-argon
+cd openwrt/package
+git clone https://github.com/jerrykuku/luci-theme-argon.git
+make menuconfig #choose LUCI->Theme->Luci-theme-argon
+make -j1 V=s
+
 # Apply patch
 # git apply ../config/patches/{0001*,0002*}.patch --directory=feeds/luci
 #
