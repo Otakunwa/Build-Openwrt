@@ -25,6 +25,15 @@ sed -i 's/192.168.1.1/192.168.50.1/g' package/base-files/files/bin/config_genera
 # Add luci-app-amlogic
 # svn co https://github.com/ophub/luci-app-amlogic/trunk/luci-app-amlogic package/luci-app-amlogic
 
+# Add luci-app-mosdns
+svn co https://github.com/sbwml/luci-app-mosdns/tree/v5/luci-app-mosdns package/luci-app-mosdns
+
+# Add luci-app-adguardhomme
+svn co https://github.com/rufengsuixing/luci-app-adguardhome package/luci-app-adguardhome
+
+# Add luci-app-mihomo
+svn co https://github.com/morytyann/OpenWrt-mihomo/tree/main/luci-app-mihomo package/luci-app-mihomo
+
 # coolsnowwolf default software package replaced with Lienol related software package
 # rm -rf feeds/packages/utils/{containerd,libnetwork,runc,tini}
 # svn co https://github.com/Lienol/openwrt-packages/trunk/utils/{containerd,libnetwork,runc,tini} feeds/packages/utils
